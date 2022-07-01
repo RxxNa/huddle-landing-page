@@ -1,0 +1,269 @@
+/* COLORS */ 
+$Pink: hsl(322, 100%, 66%);
+$LightPink: hsl(321, 100%, 78%);
+$LightRed: hsl(0, 100%, 63%);
+
+$DarkCyan: hsl(192, 100%, 9%);
+$PaleBlue: hsl(207, 100%, 98%);
+$SkyBlue: #F6FBFF;
+$DarkGreen: #00252E;
+$Gray: #666;
+
+/*
+GENERAL STYLING
+================================================ */
+html {
+  font-size: 100%;
+}
+body {
+  font-family: 'Open Sans', sans-serif;
+  color: $DarkCyan;
+  font-size: 1.125rem;
+  font-weight: 400;
+}
+/*
+COMMON
+================================================ */
+p {
+  line-height: 1.7;
+}
+img {
+  max-width: 100%;
+}
+a {
+  text-decoration: none;
+}
+h2 {
+  font-family: 'Poppins', sans-serif;
+}
+.wrapper {
+  max-width: 275px;
+  margin: 0 auto;
+}
+
+/*
+header
+================================================ */
+.header {
+  margin: 1.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.logo {
+  width: 50%;
+}
+.btn-1 {
+  border: 1px solid $Pink;
+  border-radius: 30px;
+  background: #fff;
+  color: $Pink;
+  font-size: 12px;
+  font-weight: normal;
+  padding: 5px 15px;
+  box-shadow: $Pink 0px 0px 3px;
+
+  &:hover {
+    color: $LightPink;
+    border: 1px solid $LightPink;
+  }
+}
+
+/*
+hero
+================================================ */
+.hero-text {
+  margin: 128px 0;
+  text-align: center;
+}
+.main-text {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.5rem;
+}
+.sub-text {
+  margin: 30px 0;
+  font-size: 1rem;
+}
+.btn-2 {
+  border: 1px solid $Pink;
+  border-radius: 30px;
+  background: $Pink;
+  color: $PaleBlue;
+  font-size: 12px;
+  font-weight: bold;
+  padding: 12px 40px;
+  box-shadow: $Pink 0px 0px 3px;
+
+  &:hover {
+    border: 1px solid $LightPink;
+    background: $LightPink;
+  }
+}
+.work {
+  display: grid;
+  justify-content: center;
+  margin: 30px 0;
+}
+.work-1, .work-2 {
+  padding: 30px 0;
+
+  img {
+    width:35px;
+  }
+  h1 {
+    font-size: 3.75rem;
+    font-weight: bold;
+  }
+  p {
+    color: $Gray;
+    font-size: 12px;
+  }
+}
+
+/*
+ABOUT
+================================================ */
+.box {
+  margin: 100px 0;
+}
+.bg {
+  background-color: $SkyBlue;
+}
+.bg-top {
+  font-size: 0;
+}
+.img {
+  padding: 40px 0;
+}
+.text-box  {
+  text-align: center;
+  padding: 30px 0;
+
+  p {
+    font-size: 12px;
+    padding: 20px 0;
+  }
+}
+
+/*
+JOIN
+================================================ */
+.join {
+  text-align: center;
+  margin-top: 80px;
+  margin-bottom: 120px;
+
+  h2 {
+    margin: 30px 0;
+  }
+
+}
+
+/*
+FOOTER
+================================================ */
+footer {
+  color: $PaleBlue;
+
+  h2 {
+    font-family: 'Open Sans', sans-serif;
+  }
+  
+  p {
+    font-size: 0.95rem;
+  }
+}
+.footer-bg {
+  background-color: $DarkGreen;
+}
+.newsletter {
+
+  h2 {
+    padding-top: 80px;
+    font-size: 1.25rem;
+    font-weight: 600;
+  }
+  p {
+    padding: 20px 0;
+  }
+}
+
+.logo-white {
+  color: $PaleBlue;
+}
+
+/*
+DESKTOP SITE
+================================================ */
+
+@media (min-width: 375px) {
+/*
+COMMON
+================================================ */
+  .wrapper {
+    max-width: 1100px;
+    margin: 0 auto;
+  }
+
+/*
+header
+================================================ */
+.header {
+  margin: 1.5rem 2rem;
+}
+.btn-1 {
+  font-size: 1rem;
+  padding: 5px 50px;
+}
+
+/*
+hero
+================================================ */
+.main-text {
+  font-size: 3rem;
+}
+.sub-text {
+  margin: 30px 0 60px 0;
+  padding: 0 18rem;
+  font-size: 1.15rem;
+}
+.btn-2 {
+  font-size: 1rem;
+  padding: 1rem 5rem;
+}
+.work {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 205px;
+}
+
+/*
+ABOUT
+================================================ */
+.contain {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  & .right {
+    flex-direction: row-reverse;
+  }
+}
+.right {
+  flex-direction: row-reverse;
+}
+.text-box  {
+  margin: 30px 40px;
+  text-align: start;
+
+  h2 {
+    font-size: 3rem;
+  }
+
+  p {
+    font-size: 1rem;
+    padding: 20px 0;
+  }
+}
+
+}
