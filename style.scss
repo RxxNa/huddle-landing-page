@@ -187,9 +187,80 @@ footer {
     padding: 20px 0;
   }
 }
-
-.logo-white {
+input {
+  border: 1px solid $PaleBlue;
+  border-radius: 10px;
+  background: $PaleBlue;
+  color: $Gray;
+  font-size: 12px;
+  padding: 10px 70px;
+}
+.btn-box {
+  margin: 20px 0;
+  display: flex;
+  justify-content: flex-end;
+}
+.btn-3 {
+  
+  border: 1px solid $Pink;
+  border-radius: 10px;
+  background: $Pink;
   color: $PaleBlue;
+  font-size: 12px;
+  font-weight: bold;
+  padding: 12px 30px;
+
+   &:hover {
+    border: 1px solid $LightPink;
+    background: $LightPink;
+  }
+}
+
+.footer {
+  margin-top: 60px;
+
+}
+.logo-white {
+  padding: 20px 0;
+}
+.icon {
+  padding: 20px 0;
+}
+.phone, .email {
+  display: flex;
+  justify-content: flex-start;
+  padding: 10px 0;
+
+  img {
+    width: 25px;
+    height: auto;
+  }
+
+  p {
+    padding-left: 30px;
+  }
+}
+.sns {
+  display: flex;
+  justify-content: flex-start;
+  list-style: none;
+  padding-top: 15px;
+  padding-bottom: 50px;
+
+
+  li {
+    a {
+      color: $PaleBlue;
+
+      &:hover {
+        color: rgb(195, 220, 255);
+      }
+    }
+
+    &:nth-child(2) {
+      padding: 0 20px;
+    }
+  }
 }
 
 /*
@@ -264,6 +335,55 @@ ABOUT
     font-size: 1rem;
     padding: 20px 0;
   }
+}
+
+/*
+JOIN
+================================================ */
+.join {
+  text-align: center;
+  margin-top: 80px;
+  margin-bottom: 120px;
+
+  h2 {
+    margin: 30px 0;
+    font-size: 2.5rem;
+  }
+}
+
+/*
+FOOTER
+================================================ */
+footer {
+  p {
+    font-size: 1rem;
+  }
+}
+.footer-flex {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row-reverse;
+}
+.logo-white {
+  width: 300px;
+}
+.footer {
+  margin-right: 330px;
+}
+.newsletter {
+  p {
+    padding-right: 100px;
+  }
+}
+.btn-box {
+  margin: 0;
+}
+.input {
+  display: flex;
+  justify-content: flex-start;
+}
+input {
+  margin-right: 40px;
 }
 
 }

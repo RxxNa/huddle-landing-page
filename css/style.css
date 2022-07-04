@@ -186,8 +186,75 @@ footer p {
   padding: 20px 0;
 }
 
-.logo-white {
+input {
+  border: 1px solid #f5faff;
+  border-radius: 10px;
+  background: #f5faff;
+  color: #666;
+  font-size: 12px;
+  padding: 10px 70px;
+}
+
+.btn-box {
+  margin: 20px 0;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.btn-3 {
+  border: 1px solid #ff52bf;
+  border-radius: 10px;
+  background: #ff52bf;
   color: #f5faff;
+  font-size: 12px;
+  font-weight: bold;
+  padding: 12px 30px;
+}
+.btn-3:hover {
+  border: 1px solid #ff8fd8;
+  background: #ff8fd8;
+}
+
+.footer {
+  margin-top: 60px;
+}
+
+.logo-white {
+  padding: 20px 0;
+}
+
+.icon {
+  padding: 20px 0;
+}
+
+.phone, .email {
+  display: flex;
+  justify-content: flex-start;
+  padding: 10px 0;
+}
+.phone img, .email img {
+  width: 25px;
+  height: auto;
+}
+.phone p, .email p {
+  padding-left: 30px;
+}
+
+.sns {
+  display: flex;
+  justify-content: flex-start;
+  list-style: none;
+  padding-top: 15px;
+  padding-bottom: 50px;
+}
+.sns li a {
+  color: #f5faff;
+}
+.sns li a:hover {
+  color: #c3dcff;
+}
+.sns li:nth-child(2) {
+  padding: 0 20px;
 }
 
 /*
@@ -264,6 +331,57 @@ DESKTOP SITE
   .text-box p {
     font-size: 1rem;
     padding: 20px 0;
+  }
+
+  /*
+  JOIN
+  ================================================ */
+  .join {
+    text-align: center;
+    margin-top: 80px;
+    margin-bottom: 120px;
+  }
+  .join h2 {
+    margin: 30px 0;
+    font-size: 2.5rem;
+  }
+
+  /*
+  FOOTER
+  ================================================ */
+  footer p {
+    font-size: 1rem;
+  }
+
+  .footer-flex {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row-reverse;
+  }
+
+  .logo-white {
+    width: 300px;
+  }
+
+  .footer {
+    margin-right: 330px;
+  }
+
+  .newsletter p {
+    padding-right: 100px;
+  }
+
+  .btn-box {
+    margin: 0;
+  }
+
+  .input {
+    display: flex;
+    justify-content: flex-start;
+  }
+
+  input {
+    margin-right: 40px;
   }
 }
 /*# sourceMappingURL=style.css.map */
